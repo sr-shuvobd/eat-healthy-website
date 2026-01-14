@@ -17,9 +17,18 @@
     background: linear-gradient(to right, #FBA24F, #FF1E1E);
     cursor: pointer;
 }
-.hero,.about{
+.hero,
+.about,
+.recipies-card
+{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+}
+
+.heder-text{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #707070;
 }
 /* hero section */
 .hero-text{
@@ -64,11 +73,6 @@
     max-width: 338px;
     max-height: 536px;
 }
-.heder-text{
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #707070;
-}
 .about-dx{
     max-width: 27.75rem;
     color: #18191F;
@@ -76,7 +80,40 @@
 }
 
 /* recipies */
-
+.recipies-text
+{
+    margin:72px  auto 38px auto;
+    max-width: 706px;
+    text-align: center;
+}
+.text-dr{
+    margin-top: 30px;
+    font-size: 18px;
+    color:#252525;
+}
+.recipies-card{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.card{
+    max-width: 610px;
+    padding: 30px;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 40px;
+}
+.card-img{
+    width: 100%;
+}
+.card-heder{
+    font-size: 28px;
+    font-weight: 800px;
+    margin: 30px 0 10px 0;
+}
+.card-dr{
+    font-size: 18px;
+    color: #18191F;
+}
 /* responsiv */
 
 @media screen and (max-width:576px){
@@ -84,9 +121,13 @@
         padding: 5px;
     }
     .hero,
-    .about
+    .about,
+    .recipies-card
     {
         grid-template-columns: repeat(1,1fr);
+    }
+    .recipies-card{
+        flex-direction: column;
     }
     .text-head{
     font-size: 2rem;
