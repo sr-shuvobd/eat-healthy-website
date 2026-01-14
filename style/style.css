@@ -114,6 +114,26 @@
     font-size: 18px;
     color: #18191F;
 }
+
+/* footer */
+.subscribers{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 46px 165px;
+    max-width: 1040px;
+    margin: 100px auto;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+}
+
+.footer{
+    text-align: center;
+    padding: 37px;
+    background-color: #0B0D17;
+    color: white;
+    font-size: 16px;
+}
 /* responsiv */
 
 @media screen and (max-width:576px){
@@ -126,8 +146,14 @@
     {
         grid-template-columns: repeat(1,1fr);
     }
-    .recipies-card{
+    .recipies-card,
+    .subscribers
+    {
         flex-direction: column;
+    }
+    .subscribers{
+        padding: 20px;
+        text-align: center;
     }
     .text-head{
     font-size: 2rem;
